@@ -31,21 +31,21 @@ module.exports = [{
     filename: isProd ? 'simplemde-editor.min.js' : 'simplemde-editor.js',
     libraryTarget: 'umd'
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      React: "React", react: "React", "window.react": "React", "window.React": "React"
-    }),
-  ],
+  // plugins: [
+  //   new webpack.ProvidePlugin({
+  //     React: "React", react: "React", "window.react": "React", "window.React": "React"
+  //   }),
+  // ],
   resolve: {
     extensions: ['', '.js'],
-    alias: {
-      "react": "src/dummyReact.js"
-    }
+    // alias: {
+    //   "react": "src/dummyReact.js"
+    // }
   },
-  externals: {
-    // Use external version of React
-    "react": "React"
-  },
+  // externals: {
+  //   // Use external version of React
+  //   "react": "React"
+  // },
   module: {
     noParse: ["react"],
     loaders: [
