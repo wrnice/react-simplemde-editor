@@ -6,7 +6,7 @@
   "author": "Wrnice",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.5.x",
+    "react": "^16.2.0",
     "safe-simplemde": "git+https://github.com/wrnice/safe-simplemde.git"
   },
   "main": "dist/simplemde-editor.js",
@@ -22,7 +22,8 @@
     "gulp-webpack": "^1.5.0",
     "install": "^0.4.1",
     "raw-loader": "^0.5.1",
-    "react-dom": "^15.5.x",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.12.1"
   },
