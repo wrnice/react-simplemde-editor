@@ -38,7 +38,7 @@ module.exports = [{
     }),
   ],
   resolve: {
-    extensions: ['.js'],
+    extensions: ['','.js'],
     alias: {
       "react": "src/dummyReact.js"
     }
@@ -53,7 +53,7 @@ module.exports = [{
         }
   },
   module: {
-    //noParse: ["react"],
+    noParse: ["react"],
     loaders: [
       {
         test: /\.js$/,
