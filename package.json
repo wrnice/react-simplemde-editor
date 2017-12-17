@@ -1,13 +1,13 @@
 {
-  "name": "react-simplemde-editor",
-  "homepage": "http://www.benrlodge.com",
-  "repository": "https://github.com/benrlodge/react-simplemde-editor",
-  "version": "3.6.11",
-  "author": "Ben Lodge",
+  "name": "safe-react-simplemde-editor",
+  "homepage": "https://github.com/wrnice/safe-react-simplemde-editor",
+  "repository": "https://github.com/wrnice/safe-react-simplemde-editor",
+  "version": "0.1.0",
+  "author": "Wrnice",
   "license": "MIT",
   "dependencies": {
     "react": "^15.5.x",
-    "simplemde": "^1.11.2"
+    "safe-simplemde": "git+https://github.com/wrnice/safe-simplemde.git"
   },
   "main": "dist/simplemde-editor.js",
   "devDependencies": {
