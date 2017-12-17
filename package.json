@@ -21,8 +21,7 @@
     "gulp-load-plugins": "^1.1.0",
     "gulp-webpack": "^1.5.0",
     "install": "^0.4.1",
-    "raw-loader": "^0.5.1",
-    "react": "^16.2.0",
+    "raw-loader": "^0.5.1",    
     "react-dom": "^16.2.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.12.1"
