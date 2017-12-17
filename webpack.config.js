@@ -1,13 +1,12 @@
 var webpack = require('webpack');
 var isProd = (process.env.NODE_ENV === 'production');
 
-
 module.exports = [{
   node: {fs: 'empty'},
   entry: './src/index.js',
   devtool: 'source-map',
   output: {
-    path: __dirname + "/dist",
+    path: './dist',
     filename: isProd ? 'react-simplemde-editor.min.js' : 'react-simplemde-editor.js',
     libraryTarget: 'umd'
   },
@@ -16,7 +15,7 @@ module.exports = [{
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: "babel",
         query: {
           presets: ['react', 'es2015']
         }
@@ -28,7 +27,7 @@ module.exports = [{
   entry: './src/index.js',
   devtool: 'source-map',
   output: {
-    path: __dirname + "/dist",
+    path: './dist',
     filename: isProd ? 'simplemde-editor.min.js' : 'simplemde-editor.js',
     libraryTarget: 'umd'
   },
@@ -38,7 +37,7 @@ module.exports = [{
     }),
   ],
   resolve: {
-    extensions: ['','.js'],
+    extensions: ['', '.js'],
     alias: {
       "react": "src/dummyReact.js"
     }
@@ -46,11 +45,11 @@ module.exports = [{
   externals: {
     // Use external version of React
     react: {
-          root: 'React',
-          commonjs2: 'react',
-          commonjs: 'react',
-          amd: 'react'
-        }
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    }
   },
   module: {
     noParse: ["react"],
@@ -58,7 +57,7 @@ module.exports = [{
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: "babel",
         query: {
           presets: ['react', 'es2015']
         }
