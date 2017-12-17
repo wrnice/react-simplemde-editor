@@ -42,10 +42,10 @@ module.exports = [{
     //   "react": "src/dummyReact.js"
     // }
   },
-  externals: {
-    // Use external version of React
-    "react": "React"
-  },
+  // externals: {
+  //   // Use external version of React
+  //   "react": "React"
+  // },
   module: {
     noParse: ["react"],
     loaders: [
