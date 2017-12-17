@@ -38,9 +38,9 @@ module.exports = [{
   ],
   resolve: {
     extensions: ['', '.js'],
-    alias: {
-      "react": "src/dummyReact.js"
-    }
+    // alias: {
+    //   "react": "src/dummyReact.js"
+    // }
   },
   externals: {
     // Use external version of React
