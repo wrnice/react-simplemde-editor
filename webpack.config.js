@@ -44,7 +44,7 @@ module.exports = [{
   },
   externals: {
     // Use external version of React
-    "react": "react"
+    "react": "React"
   },
   module: {
     noParse: ["react"],

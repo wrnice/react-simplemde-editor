@@ -1,10 +1,10 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
+		module.exports = factory(require("React"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
+		define(["React"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["react"]);
+		var a = typeof exports === 'object' ? factory(require("React")) : factory(root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
