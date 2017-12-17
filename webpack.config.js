@@ -6,7 +6,7 @@ module.exports = [{
   entry: './src/index.js',
   devtool: 'source-map',
   output: {
-    path: './dist',
+    path: __dirname + "/dist",
     filename: isProd ? 'react-simplemde-editor.min.js' : 'react-simplemde-editor.js',
     libraryTarget: 'umd'
   },
@@ -15,7 +15,7 @@ module.exports = [{
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel",
+        loader: "babel-loader",
         query: {
           presets: ['react', 'es2015']
         }
@@ -27,7 +27,7 @@ module.exports = [{
   entry: './src/index.js',
   devtool: 'source-map',
   output: {
-    path: './dist',
+    path: __dirname + "/dist",
     filename: isProd ? 'simplemde-editor.min.js' : 'simplemde-editor.js',
     libraryTarget: 'umd'
   },
@@ -37,7 +37,7 @@ module.exports = [{
     }),
   ],
   resolve: {
-    extensions: ['', '.js'],
+    extensions: ['.js'],
     alias: {
       "react": "src/dummyReact.js"
     }
@@ -47,12 +47,12 @@ module.exports = [{
     "react": "React"
   },
   module: {
-    noParse: ["react"],
+    //noParse: ["react"],
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel",
+        loader: "babel-loader",
         query: {
           presets: ['react', 'es2015']
         }
