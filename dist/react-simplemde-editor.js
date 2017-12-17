@@ -5079,7 +5079,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		var cm = editor.codemirror;
 		var stat = getState(cm);
 		var options = editor.options;
-		var url = "http://";
+		var url = "safe://";
 		if(options.promptURLs) {
 			url = prompt(options.promptTexts.link);
 			if(!url) {
@@ -5096,7 +5096,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		var cm = editor.codemirror;
 		var stat = getState(cm);
 		var options = editor.options;
-		var url = "http://";
+		var url = "safe://";
 		if(options.promptURLs) {
 			url = prompt(options.promptTexts.image);
 			if(!url) {
@@ -5680,10 +5680,10 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 		"guide": {
 			name: "guide",
-			action: "https://simplemde.com/markdown-guide",
+			action: "safe://markdown-guide", // maybe one day
 			className: "fa fa-question-circle",
 			title: "Markdown Guide",
-			default: true
+			default: false // disable this for now
 		},
 		"separator-5": {
 			name: "separator-5"
@@ -5733,10 +5733,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 		// Check if Font Awesome needs to be auto downloaded
-		var autoDownloadFA = true;
+		// var autoDownloadFA = true;
+		var autoDownloadFA = false; // lets disable this for now
 	
 		if(options.autoDownloadFontAwesome === false) {
-			autoDownloadFA = false;
+			autoDownloadFA = false; //
 		}
 	
 		if(options.autoDownloadFontAwesome !== true) {
@@ -5754,7 +5755,8 @@ return /******/ (function(modules) { // webpackBootstrap
 		if(autoDownloadFA) {
 			var link = document.createElement("link");
 			link.rel = "stylesheet";
-			link.href = "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css";
+			// link.href = "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"; //we really don't want to make an http request
+			link.href = "safe://somepath/font-awesome.min.css"; // one day maybe
 			document.getElementsByTagName("head")[0].appendChild(link);
 		}
 	
@@ -6488,6 +6490,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	module.exports = SimpleMDE;
+
 
 /***/ }),
 /* 39 */
