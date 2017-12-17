@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var isProd = (process.env.NODE_ENV === 'production');
 
+
 module.exports = [{
   node: {fs: 'empty'},
   entry: './src/index.js',
@@ -44,7 +45,7 @@ module.exports = [{
   },
   externals: {
     // Use external version of React
-    "react": "React"
+    react: "React"
   },
   module: {
     //noParse: ["react"],
