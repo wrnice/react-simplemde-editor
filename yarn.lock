@@ -3496,7 +3496,7 @@ safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
 
 "safe-simplemde@git+https://github.com/wrnice/safe-simplemde.git":
   version "0.1.0"
-  resolved "git+https://github.com/wrnice/safe-simplemde.git#051b32f2c71631e13a140adf42a0ce6f68f09d5e"
+  resolved "git+https://github.com/wrnice/safe-simplemde.git#ffb7914379478649c32950eadb4cdafb6cb2a847"
   dependencies:
     codemirror "*"
     codemirror-spell-checker "*"

@@ -6000,7 +6000,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var insertTexts = {
 		link: ["[", "](#url#)"],
-		image: ["![](", "#url#)"],
+		image: ["![", "](#url#)"],
 		table: ["", "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text     | Text     |\n\n"],
 		horizontalRule: ["", "\n\n-----\n\n"]
 	};
@@ -6786,7 +6786,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	module.exports = SimpleMDE;
-
 
 /***/ }),
 /* 40 */
