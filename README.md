@@ -1,3 +1,4 @@
-A fork of the React SimpleMDE Markdown Editor (  https://github.com/benrlodge/react-simplemde-editor.git ) , to be used in the Safe browser.
+This project moved here :
 
-Beware this is quite probably not going to be maintened.
+https://notabug.org/wrnice/safe-react-simplemde-editor
+
